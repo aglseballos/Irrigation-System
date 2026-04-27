@@ -1,5 +1,4 @@
-# Implementation of Threshold-, Rules-, and Optimization-based Irrigation Scheduling Algorithms for Water Use Optimization
-##(Proof of Concept)
+# Implementation of Threshold-, Rules-, and Optimization-based Irrigation Scheduling Algorithms for Water Use Optimization (Proof of Concept)
 
 ## Overview
 This project simulates and compares three irrigation strategies:
