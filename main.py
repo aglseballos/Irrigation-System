@@ -220,9 +220,9 @@ def evaluate_model(df_model):
 # MAIN SIMULATION LOOP
 # =========================
 
-def main("data/Smart_Farming_Crop_Yield_2024.csv"):
+def main(data_path):
 
-    df = load_data("data/Smart_Farming_Crop_Yield_2024.csv")
+    df = load_data(data_path)
 
     all_simulation_summaries = []
     all_daily_results_list = []
@@ -249,6 +249,7 @@ def main("data/Smart_Farming_Crop_Yield_2024.csv"):
 
         results = pd.concat(all_results, ignore_index=True)
         results["Simulation"] = sim
+
         all_daily_results_list.append(results)
 
         summary_rows = []
@@ -284,8 +285,27 @@ def main("data/Smart_Farming_Crop_Yield_2024.csv"):
 
         all_simulation_summaries.append(sim_summary)
 
-    print("\nSimulation Complete")
-    print(pd.concat(all_simulation_summaries).groupby("Model")[["WUE","Total_Cost"]].mean())
+    # =========================
+    # FINAL SUMMARY (FIXED)
+    # =========================
+
+    all_simulation_results = pd.concat(all_simulation_summaries, ignore_index=True)
+
+    cols = [
+        "WUE",
+        "Root_Zone_Stability",
+        "Water_Waste_Index",
+        "Irrigation_Frequency",
+        "Stress_Days",
+        "Water_Cost",
+        "Energy_Cost",
+        "Total_Cost"
+    ]
+
+    summary = all_simulation_results.groupby("Model")[cols].mean()
+
+    print("\n=== FINAL MODEL COMPARISON (AVERAGED OVER SIMULATIONS) ===")
+    print(summary.round(3))
 
 
 # =========================
@@ -293,9 +313,8 @@ def main("data/Smart_Farming_Crop_Yield_2024.csv"):
 # =========================
 
 if __name__ == "__main__":
+    main("data/Smart_Farming_Crop_Yield_2024.csv")
     import sys
 
-    if len(sys.argv) < 2:
-        print("Usage: python main.py Smart_Farming_Crop_Yield_2024.csv")
-    else:
-        main(sys.argv[1])
+    data_path = sys.argv[1]
+    main(data_path)
