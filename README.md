@@ -18,11 +18,8 @@ The system simulates soil moisture dynamics over time and evaluates performance 
 
 1. Clone the repository: xxx
 2. Install dependencies: pip install -r requirements.txt
-3. Run the simulation: main.py
+3. Run the simulation: python main.py 
    
 ## Output
 The system prints a comparison table of all algorithms.
 
-## Notes
-- Soil moisture is simulated using a bounded water balance model
-- Rainfall and evapotranspiration are simplified assumptions
