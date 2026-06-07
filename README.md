@@ -29,7 +29,7 @@ Link to Colab: https://colab.research.google.com/drive/1ZCwUBQMlcLV86qU51Ey-ZWHX
 ## Output
 The system prints a comparison table of all algorithms.
 === FINAL MODEL COMPARISON (AVERAGED OVER SIMULATIONS) ===
-|Algo| WUE | Root_Zone_Stability | Water_Waste_Index | ... | Water_Cost | Energy_Cost | Total_CostModel                                                        ...                                     
+|Model| WUE | Root_Zone_Stability | Water_Waste_Index | ... | Water_Cost | Energy_Cost | Total_Cost                                                        ...                                     
 | --------|---------|---------| --------|---------|---------| --------|---------|
 |Optimization | 0.413      |          0.717         |      0.04 | ...  |     2.787  |      6.689 |      9.475
 |Rule-Based    |0.331       |         0.611          |     0.08  |...   |    2.815   |     6.757  |     9.572
