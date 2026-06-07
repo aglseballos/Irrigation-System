@@ -17,7 +17,9 @@ The system simulates soil moisture dynamics over time and evaluates performance 
 ## How to Run
 
 1. Clone the repository:
+
    git clone https://github.com/aglseballos/Irrigation-System.git
+
    cd Irrigation-System
 3. Install dependencies: pip install -r requirements.txt
 4. Run the simulation: python main.py 
