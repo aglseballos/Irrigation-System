@@ -1,4 +1,5 @@
 # Implementation of Threshold-, Rules-, and Optimization-based Irrigation Scheduling Algorithms for Water Use Optimization (Proof of Concept)
+### By Karen Althea Aquino, Angel Grace Seballos, and Bryan Anthony Al Shidhani
 
 ## Overview
 This project simulates and compares three irrigation strategies:
