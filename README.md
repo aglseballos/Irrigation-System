@@ -24,7 +24,7 @@ Link to Colab: https://colab.research.google.com/drive/1N4sO6CeiZFVjhUYBdIdZ3-8v
 
    cd Irrigation-System
 3. Install dependencies: pip install -r requirements.txt
-4. Run the simulation: python main.py data/Smart_Farming_Crop_Yield_2024.csv 
+4. Run the simulation: python main.py data/irrigation_prediction.csv 
    
 ## Output
 The system prints a comparison table of all algorithms.
