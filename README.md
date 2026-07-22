@@ -14,7 +14,7 @@ The system simulates soil moisture dynamics over time and evaluates performance 
 - Irrigation Frequency
 - Stress Days
 
-Link to Colab: https://colab.research.google.com/drive/1ZCwUBQMlcLV86qU51Ey-ZWHXPa-hrSV6?usp=sharing
+Link to Colab: https://colab.research.google.com/drive/1N4sO6CeiZFVjhUYBdIdZ3-8vH0DA844j?usp=sharing
 
 ## How to Run
 
@@ -29,9 +29,4 @@ Link to Colab: https://colab.research.google.com/drive/1ZCwUBQMlcLV86qU51Ey-ZWHX
 ## Output
 The system prints a comparison table of all algorithms.
 
-=== FINAL MODEL COMPARISON (AVERAGED OVER SIMULATIONS) ===
-|Model| WUE | Root_Zone_Stability | Water_Waste_Index | ... | Water_Cost | Energy_Cost | Total_Cost                                                        ...                                     
-| --------|---------|---------| --------|---------|---------| --------|---------|
-|Optimization | 0.413      |          0.717         |      0.04 | ...  |     2.787  |      6.689 |      9.475
-|Rule-Based    |0.331       |         0.611          |     0.08  |...   |    2.815   |     6.757  |     9.572
-|Threshold     |0.076        |        0.114           |    0.04  |...    |   2.553     |   6.128   |    8.681
+
