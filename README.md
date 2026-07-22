@@ -24,8 +24,10 @@ Link to Colab: https://colab.research.google.com/drive/1N4sO6CeiZFVjhUYBdIdZ3-8v
    git clone https://github.com/aglseballos/Irrigation-System.git
 
    cd Irrigation-System
-3. Install dependencies: pip install -r requirements.txt
-4. Run the simulation: python main.py data/irrigation_prediction.csv 
+2. Create a .venv folder containing its own Python executable and installed packages: python -m venv .venv
+3. Activate that environment in your current terminal session: source .venv/bin/activate
+4. Install dependencies: pip install -r requirements.txt
+5. Run the simulation: python main.py --data data/irrigation_prediction.csv 
    
 ## Output
 The application launches an interactive Gradio dashboard for comparing three irrigation scheduling approaches—Threshold-Based, Rule-Based, and Optimization-Based—using East-region records from the supplied dataset.
